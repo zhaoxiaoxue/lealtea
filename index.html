@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>发现</title>
+
+    <link rel="stylesheet" href="./css/find.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="./js/find.js"></script>
+</head>
+<body>
+<div class="top">
+    <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAaCdDAAAO-nDGHNM912.png" alt="">
+</div>
+
+<div class="content">
+    <div class="ming ning">
+        <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAf0RXAAAO5uOMTmI326.png" alt="">
+    </div>
+    <div class="clear"></div>
+
+    <div class="container">
+        <div id="slide" class="slide" class="index-slide" alt="star">
+            <!-- 轮播图片数量可自行增减 -->
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+            <div class="img"><img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAKR-6AADjeH7OuYo697.png"/></div>
+        </div>
+    </div>
+
+    <div class="ming">
+        <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwuAIK5aAAAN9MPVPeQ933.png" alt="">
+    </div>
+
+    <div class="hing">
+        <div class="himg">
+            <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyADpfUAAFCgGNt9wA938.png" alt="">
+            <div class="dianz da1">
+                <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyAdy6aAAAFXWErVPc955.png" alt="">
+                <div class="shu">43</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="himg">
+            <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyADpfUAAFCgGNt9wA938.png" alt="">
+            <div class="dianz da2">
+                <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyAdy6aAAAFXWErVPc955.png" alt="">
+                <div class="shu">43</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="himg">
+            <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyADpfUAAFCgGNt9wA938.png" alt="">
+            <div class="dianz da3">
+                <img src="http://img.zhuyun.cn/M00/C3/2E/wKgJNFlMtwyAdy6aAAAFXWErVPc955.png" alt="">
+                <div class="shu">43</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var index,num;
+    $(".da1").click(function(){
+        index=$(".da1").index();
+        num=Number($(".da1 .shu").text())+1;
+        $(".da1 .shu").text(num);
+    });
+    $(".da2").click(function(){
+        index=$(".da2").index();
+        num=Number($(".da2 .shu").text())+1;
+        $(".da2 .shu").text(num);
+    });
+    $(".da3").click(function(){
+        index=$(".da3").index();
+        num=Number($(".da3 .shu").text())+1;
+        $(".da3 .shu").text(num);
+    });
+
+</script>
+</body>
+</html>
